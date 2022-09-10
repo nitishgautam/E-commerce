@@ -24,15 +24,16 @@ nav .navTop .search {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  padding: 10px 20px;
   border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid gray;
 }
 nav .navTop .search .searchInput {
   background-color: transparent;
   border: none;
   outline: none;
-  padding: 0 20px;
+  padding: 10px 30px;
+  color: white;
 }
 nav .navTop .search .searchInput::-moz-placeholder {
   color: white;
@@ -52,6 +53,7 @@ nav .navTop .cart-btn {
 }
 nav .navBottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -64,11 +66,12 @@ nav .navBottom .menuItem {
   color: gray;
   font-weight: 400;
   padding: 5px;
-  border-bottom: 2px solid white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 nav .active-btn {
   transition: all 0.4s ease-in-out;
-  border-bottom: 2px solid red !important;
+  border: 1px solid red !important;
 }
 
 .cart {
@@ -79,14 +82,12 @@ nav .active-btn {
   width: 300px;
   background-color: whitesmoke;
   display: none;
-  -webkit-animation: scaleAnim 0.2s ease-in-out;
-          animation: scaleAnim 0.2s ease-in-out;
 }
 
 .cartOpen {
   display: block;
-  -webkit-animation: scaleAnim 0.2s ease-in-out;
-          animation: scaleAnim 0.2s ease-in-out;
+  -webkit-animation: left 0.2s ease-in-out;
+          animation: left 0.2s ease-in-out;
 }
 
 .cartClose {
@@ -97,8 +98,6 @@ nav .active-btn {
   align-items: center;
   margin: 5px;
   border: 1px solid;
-  -webkit-animation: scaleAnim 0.2s ease-in-out;
-          animation: scaleAnim 0.2s ease-in-out;
 }
 .cartClose i {
   font-size: 20px;
@@ -107,19 +106,21 @@ nav .active-btn {
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 20px;
 }
 .product-container .product-item {
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   text-align: center;
+  border-radius: 2px;
+  padding: 20px;
   margin: 0 auto;
 }
 .product-container .product-item .image-con {
   width: 80%;
+  margin: auto;
 }
 .product-container .product-item .image-con img {
   width: 100%;
@@ -128,8 +129,8 @@ nav .active-btn {
 .product-container .product-item .desc {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-top: 10px;
+  gap: 10px;
+  margin-top: 5px;
 }
 .product-container .product-item .desc .product-title {
   font-weight: 400;
@@ -151,6 +152,7 @@ article {
   border-right: 1px solid;
   -webkit-animation: scaleAnim 0.6s ease-in-out;
           animation: scaleAnim 0.6s ease-in-out;
+  background-color: white;
 }
 
 .active {
@@ -162,32 +164,12 @@ article {
   transition: all 0.8s ease-in-out;
 }
 
-.sec1 {
-  background-color: rgb(241, 232, 232);
-}
-
-.sec2 {
-  background-color: rgb(241, 232, 232);
-}
-
-.sec3 {
-  background-color: rgb(241, 232, 232);
-}
-
-.sec4 {
-  background-color: rgb(241, 232, 232);
-}
-
-.sec5 {
-  background-color: rgb(241, 232, 232);
-}
-
 .footer {
   min-height: 40vh;
   background-color: black;
 }
 
-@-webkit-keyframes scaleAnim {
+@-webkit-keyframes left {
   0% {
     transform: translateX(100%) scaleY(1);
   }
@@ -196,11 +178,41 @@ article {
   }
 }
 
-@keyframes scaleAnim {
+@keyframes left {
   0% {
     transform: translateX(100%) scaleY(1);
   }
   100% {
     transform: translateY(0) scaleY(1);
+  }
+}
+@-webkit-keyframes right {
+  0% {
+    transform: translateX(-100%) scaleY(2);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(-100%) scaleY(2);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav .navTop .search {
+    display: none;
+  }
+  nav .navBottom .menuItem {
+    margin-right: 20px;
+  }
+  .product-container .product-item {
+    width: 250px;
+  }
+  .product-container .product-item .desc .buyButton .buy {
+    padding: 10px 50px;
   }
 }/*# sourceMappingURL=style.css.map */

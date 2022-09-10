@@ -2,52 +2,69 @@
 const furniture = [
     {
         id: 1,
-        titleImage: "https://m.media-amazon.com/images/I/71D9AEENuAL._SY450_.jpg",
-        title: "Pulse Gaming Racing Edition GT-700",
+        titleImage: "https://balenciaga.dam.kering.com/m/3568c9bc22b1acab/Thumbnail-666275T01011002_F.jpg?v=3",
+        title: "Cities New York Cup",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-        price: "Rs 9999",
+        price: "Rs 9k",
     },
     {
         id: 2,
-        titleImage: "https://m.media-amazon.com/images/I/815I9f4qbwL._SY450_.jpg",
-        title: "BLACK OAK 01 Marrber Convertible Sectional Sofa",
+        titleImage: "https://balenciaga.dam.kering.com/m/5087470548ca4244/Thumbnail-666275T01019004_F.jpg?v=3",
+        title: "Cities Beijing Cup",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "Rs 59K",
     },
     {
         id: 3,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw143487c5/images/hi-res/VM1C229TKSE0PAF.png?sw=1680&q=80",
-        title: "Suede and knit B-Bold sneakers with straps",
+        titleImage: "https://balenciaga.dam.kering.com/m/365ed9b177abc70/Thumbnail-682680T01089081_F.jpg?v=5",
+        title: "Champagne Glass",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$995",
     },
     {
         id: 4,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw15f321f5/images/hi-res/XM1TC180LVIT0PAF.png?sw=1680&q=80",
-        title: "Smooth leather Phil Ranger ankle boots",
+        titleImage: "https://balenciaga.dam.kering.com/m/195e7f46c44a17f1/Large-682678T01089081_F.jpg?v=5",
+        title: "WIine Glass",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$1695",
     },
     {
         id: 5,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw351d2919/images/hi-res/YM0VJ309KPNRGFEF.png?sw=1680&q=80",
-        title: "Neoprene and leather Unicorn low-top sneaker",
+        titleImage: "https://balenciaga.dam.kering.com/m/795c4eb76be7252/Thumbnail-662620TKVG61000_F.jpg?v=4",
+        title: "Travel Pillow",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-        price: "$1150",
+        price: "Rs 9999",
     },
     {
         id: 6,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw1020aa24/images/hi-res/XM0VL299LPQP0FAF.png?sw=1680&q=80",
-        title: "Quilted leather B-IT mules",
+        titleImage: "https://balenciaga.dam.kering.com/m/499c4be87a2a3678/Thumbnail-672709T01051000_F.jpg?v=4",
+        title: "H20 Bottle",
         category: "furniture",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-        price: "$750",
+        price: "Rs 59K",
     },
+    {
+        id: 7,
+        titleImage: "https://balenciaga.dam.kering.com/m/7e08aed95591e507/Thumbnail-6693962UA871090_F.jpg?v=6",
+        title: "Groccery Shopper Bag",
+        category: "furniture",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$995",
+    },
+    {
+        id: 8,
+        titleImage: "https://balenciaga.dam.kering.com/m/7d43ea5d9201244e/Thumbnail-698553T01231001_F.jpg?v=3",
+        title: "Allover Cushion",
+        category: "furniture",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$1695",
+    },
+    
 ];
 
 const furnitureContainer = document.querySelector('.furniture-container');
@@ -71,7 +88,7 @@ function displayFurnitureItem(p) {
             <p class="product-description">${item.desc}</p>
         
             <div class="buyButton">
-                <span class="buy">${item.price} - Add to Cart</span>
+                <div class="buy">${item.price} - Add to Cart</div>
             </div>
         </div>
     </div>`;

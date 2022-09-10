@@ -21,14 +21,15 @@ nav{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: gray;
-            padding: 10px 20px;
             border-radius: 5px;
+            padding: 0 10px;
+            border: 1px solid gray;
             .searchInput{
                 background-color: transparent;
                 border: none;
                 outline: none;
-                padding: 0 20px;
+                padding: 10px 30px;
+                color: white;
                 &::placeholder{
                     color: white;
                 }
@@ -44,6 +45,7 @@ nav{
     }
     .navBottom{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-color: white;
@@ -55,12 +57,13 @@ nav{
             color: gray;
             font-weight: 400;
             padding:5px;
-            border-bottom: 2px solid white;
+            border: 1px solid white;
+            border-radius: 5px;
         }
     }
     .active-btn {
         transition: all .4s ease-in-out;
-        border-bottom:2px solid red !important;
+        border:1px solid red !important;
     }
 }
 
@@ -72,11 +75,10 @@ nav{
     width:300px;
     background-color: whitesmoke;
     display: none;
-    animation: scaleAnim .2s ease-in-out;
 }
 .cartOpen{
     display: block;
-    animation: scaleAnim .2s ease-in-out;
+    animation: left .2s ease-in-out;
 }
 .cartClose{
     cursor: pointer;
@@ -86,7 +88,6 @@ nav{
     align-items: center;
     margin: 5px;
     border: 1px solid;
-    animation: scaleAnim .2s ease-in-out;
     i{
         font-size: 20px;
     }
@@ -96,18 +97,17 @@ nav{
 .product-container{
     display: flex;
     flex-wrap:wrap;
-    gap:100px;
+    gap:20px;
     .product-item{
         width:300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height:max-content;
         text-align:center;
+        border-radius: 2px;
+        padding:20px;
         margin:0 auto;
         .image-con{
            width: 80%;
-           
+           margin: auto;
             img{
                 width: 100%;
                 transition: all .4s ease-in-out;
@@ -118,10 +118,10 @@ nav{
             }
         }
         .desc{
-           display: flex;
-           flex-direction: column;
-           gap:5px;
-           margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            margin-top: 5px;
             .product-title{
                 font-weight: 400;
             }
@@ -149,6 +149,7 @@ article{
     border-left: 1px solid;
     border-right:1px solid;
     animation: scaleAnim .6s ease-in-out;
+    background-color: white;
  }
  .active{
      display: block;
@@ -158,29 +159,29 @@ article{
      transition: all .8s ease-in-out;
  }
  
-.sec1{
-    background-color: rgb(241, 232, 232);
+// .sec1{
+//     background-color: rgb(241, 232, 232);
     
-}
-.sec2{
-    background-color: rgb(241, 232, 232);
+// }
+// .sec2{
+//     background-color: rgb(241, 232, 232);
     
-}
-.sec3{
-    background-color: rgb(241, 232, 232);
-}
-.sec4{
-    background-color: rgb(241, 232, 232);
-}
-.sec5{
-    background-color: rgb(241, 232, 232);
-}
+// }
+// .sec3{
+//     background-color: rgb(241, 232, 232);
+// }
+// .sec4{
+//     background-color: rgb(241, 232, 232);
+// }
+// .sec5{
+//     background-color: rgb(241, 232, 232);
+// }
 .footer{
     min-height:40vh;
     background-color: black;
 }
 // KEYFRAMES
-@keyframes scaleAnim {
+@keyframes left {
     0% {
       transform: translateX(100%) scaleY(1);
     }
@@ -188,3 +189,42 @@ article{
       transform: translateY(0) scaleY(1);
     }
   }
+  @keyframes right {
+    0% {
+      transform: translateX(-100%) scaleY(2);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+
+  ///MEDIA QUERY
+  @media only screen and (max-width: 800px) {
+    nav{
+        .navTop{
+            .search{
+                display: none;
+            }
+        }
+        .navBottom{
+            .menuItem{
+                margin-right: 20px;
+            }
+        }
+    }
+    .product-container{
+        .product-item{
+            width: 250px;
+            .desc{
+                .buyButton{
+                    .buy{
+                        padding: 10px 50px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+  }
+  

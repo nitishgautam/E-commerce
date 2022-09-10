@@ -119,7 +119,7 @@ function displayBookItems(p) {
             <p class="product-description">${item.desc}</p>
         
             <div class="buyButton">
-                <span class="buy">${item.price} - Add to Cart</span>
+                <div class="buy">${item.price} - Add to Cart</div>
             </div>
         </div>
     </div>`;

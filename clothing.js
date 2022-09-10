@@ -2,48 +2,64 @@
 const cloth = [
     {
         id: 1,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw780551a6/images/hi-res/YM1VJ309KNSC0PAF.png?sw=1680&q=80",
-        title: "Leather Unicorn low-top sneakers",
+        titleImage: "https://balenciaga.dam.kering.com/m/234d6704f445d228/Thumbnail-600583TIV539040_F.jpg?v=7",
+        title: "Political Campaign Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$1195",
     },
     {
         id: 2,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw0781a8d4/images/hi-res/YM3VI277LSWDICYF.png?sw=1680&q=80",
-        title: "Leather B-Bold low-top sneakers",
+        titleImage: "https://balenciaga.dam.kering.com/m/3be7acbaa5ef27a0/Large-620973TKVI91366_F.jpg?v=3",
+        title: "Political Campaign Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$850",
     },
     {
         id: 3,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw143487c5/images/hi-res/VM1C229TKSE0PAF.png?sw=1680&q=80",
-        title: "Suede and knit B-Bold sneakers with straps",
+        titleImage: "https://balenciaga.dam.kering.com/m/29561a9784ff2fcc/Small_thumbnail-600583TIV531070_F.jpg?v=5",
+        title: "Political Campaign Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$995",
     },
     {
         id: 4,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw15f321f5/images/hi-res/XM1TC180LVIT0PAF.png?sw=1680&q=80",
-        title: "Smooth leather Phil Ranger ankle boots",
+        titleImage: "https://balenciaga.dam.kering.com/m/20731a01cce9f503/Small_thumbnail-600583TIV531195_F.jpg?v=3",
+        title: "Political Campaign Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$1695",
     },
     {
         id: 5,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw351d2919/images/hi-res/YM0VJ309KPNRGFEF.png?sw=1680&q=80",
-        title: "Neoprene and leather Unicorn low-top sneaker",
+        titleImage: "https://balenciaga.dam.kering.com/m/30e4b0d296fe44e/Small_thumbnail-659403TKVB63011_F.jpg?v=7",
+        title: "Destroyed Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$1150",
     },
     {
         id: 6,
-        titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw1020aa24/images/hi-res/XM0VL299LPQP0FAF.png?sw=1680&q=80",
-        title: "Quilted leather B-IT mules",
+        titleImage: "https://balenciaga.dam.kering.com/m/1c69854684dd0cf5/Small_thumbnail-659403TKVB61093_F.jpg?v=3",
+        title: "Destroyed Hoodie",
+        category: "cloth",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$750",
+    },
+    {
+        id: 7,
+        titleImage: "https://balenciaga.dam.kering.com/m/64fc8a734de4dd4e/Small_thumbnail-659403TKVB63078_F.jpg?v=6",
+        title: "Destroyed Hoodie",
+        category: "cloth",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$1150",
+    },
+    {
+        id: 8,
+        titleImage: "https://balenciaga.dam.kering.com/m/52bba294c3ffaa93/Thumbnail-600583TMVL17110_F.jpg?v=4",
+        title: "Destroyed Hoodie",
         category: "cloth",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$750",
@@ -71,7 +87,7 @@ function displayClothItem(p) {
             <p class="product-description">${item.desc}</p>
         
             <div class="buyButton">
-                <span class="buy">${item.price} - Add to Cart</span>
+                <div class="buy">${item.price} - Add to Cart</div>
             </div>
         </div>
     </div>`;

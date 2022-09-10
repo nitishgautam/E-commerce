@@ -1,50 +1,66 @@
 
 const electronic = [
     {
-        id: 4,
-        titleImage: "https://gmedia.playstation.com/is/image/SIEPDC/console-left_@1x?fmt=png-alpha&scl=1",
-        title: "PS5",
-        category: "electronic",
-        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-        price: "$100",
-    },
-    {
-        id: 5,
-        titleImage: "https://compass-ssl.xbox.com/assets/51/27/51278d66-85f5-4eca-9428-0d23669c7617.jpg?n=10202018_Panes-3-up-1400_Hero-SS_570x570.jpg",
-        title: "Xbox Series S",
-        category: "electronic",
-        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-        price: "$100",
-    },
-    {
-        id: 6,
-        titleImage: "https://compass-ssl.xbox.com/assets/83/53/83534a33-0998-43dc-915a-4ec0a686d679.jpg?n=10202018_Panes-3-up-1400_Hero-SX_570x570.jpg",
-        title: "Xbox Series X",
+        id: 1,
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-z-fold4-f936-sm-f936bzahinu-533084043?$1300_1038_PNG$",
+        title: " Galaxy Z Fold4",
         category: "electronic",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$100",
     },
     {
         id: 2,
-        titleImage: "https://www.apple.com/v/studio-display/b/images/overview/pairs/hw_screen_studio_display__fsht7mw0rhqq_medium.jpg",
-        title: "Apple Monitor",
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-z-flip4-f721-sm-f721blvainu-533048782?$1300_1038_PNG$",
+        title: " Galaxy Z Flip4",
+        category: "electronic",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$100",
+    },
+    {
+        id: 3,
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-watch5-40mm-sm-r900nzaainu-533186450?$2052_1641_PNG$",
+        title: "Galaxy Watch5",
+        category: "electronic",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$100",
+    },
+    {
+        id: 4,
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-watch5-pro-sm-r920nzkainu-533190299?$2052_1641_PNG$",
+        title: "Galaxy Watch5 Pro",
         category: "electronic",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$100",
     },
     
     {
+        id: 5,
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-buds2-pro-r510-sm-r510nlvainu-533192230?$1300_1038_PNG$",
+        title: "Galaxy Buds Pro",
+        category: "electronic",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$100",
+    },
+    {
+        id: 6,
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/sm-p613nzaainu/gallery/in-galaxy-tab-s6-lite-p610-428695-sm-p613nzaainu-532944520?$1300_1038_PNG$",
+        title: "Galaxy Tab S6 Lite",
+        category: "electronic",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$100",
+    },
+    {
         id: 7,
-        titleImage: "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.25/c_scale,w_1000/ncom/en_US/switch/site-design-update/photo01",
-        title: "Nintendo Switch",
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/rt34b4542s8-hl/gallery/in-ref-tmf-rt4000-424849-rt34b4542s8-hl-532548251?$1300_1038_PNG$",
+        title: "324L Twin Cooling Plus",
         category: "electronic",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$100",
     },
     {
         id: 8,
-        titleImage: "https://www.apple.com/v/macbook-air-m1/b/images/overview/compare/compare_mbp_14_16__gb70k890dbe6_medium.png",
-        title: "MacBook Air",
+        titleImage: "https://images.samsung.com/is/image/samsung/p6pim/in/ls32bg750nwxxl/gallery/in-odyssey-neo-g7-g75nb-ls32bg750nwxxl-533184849?$1300_1038_PNG$",
+        title: "Quantum Mini-LED",
         category: "electronic",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$100",
@@ -72,7 +88,7 @@ function displayElectronicItem(p) {
             <p class="product-description">${item.desc}</p>
         
             <div class="buyButton">
-                <span class="buy">${item.price} - Add to Cart</span>
+                <div class="buy">${item.price} - Add to Cart</div>
             </div>
         </div>
     </div>`;

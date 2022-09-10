@@ -42,8 +42,24 @@ const shoe = [
     },
     {
         id: 6,
+        titleImage: "https://us.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw88b96e0a/images/hi-res/YM0VH315LPNX0PAF.png?sw=375&sh=530",
+        title: "IT hight-top mules in quilted",
+        category: "shoe",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$1295",
+    },
+    {
+        id: 7,
+        titleImage: "https://us.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw464887c4/images/hi-res/YM1VJ309KNOCEABF.png?sw=600&q=90",
+        title: "Neoprene and leather Unicorn low-top sneakers",
+        category: "shoe",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        price: "$1195",
+    },
+    {
+        id: 8,
         titleImage: "https://in.balmain.com/dw/image/v2/BHGX_PRD/on/demandware.static/-/Sites-balmain-mastercatalog/default/dw1020aa24/images/hi-res/XM0VL299LPQP0FAF.png?sw=1680&q=80",
-        title: "Quilted leather B-IT mules",
+        title: "Quilted leather B-IT mules sleeper",
         category: "shoe",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
         price: "$750",
@@ -71,7 +87,7 @@ function displayShoeItem(p) {
             <p class="product-description">${item.desc}</p>
         
             <div class="buyButton">
-                <span class="buy">${item.price} - Add to Cart</span>
+                <div class="buy">${item.price} - Add to Cart</div>
             </div>
         </div>
     </div>`;

@@ -23,6 +23,8 @@ const cartClose = document.querySelector('.cartClose');
     });
 })();
 
+
+
 //CART TOGGLE 
 
 cartBtn.addEventListener('click', () =>{
@@ -32,7 +34,4 @@ cartClose.addEventListener('click', () =>{
     cart.classList.remove('cartOpen');
 });
 
-// toggle.addEventListener("click", () => {
-//     open.classList.remove("close");
-// });
 
